@@ -1,0 +1,30 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:easy": "jest easy/",
+    "test:medium": "jest medium/",
+    "test:hard": "jest hard/",
+    "watch:easy:01": "jest --watch easy/01-two-sum",
+    "watch:easy:02": "jest --watch easy/02-palindrome-number",
+    "watch:easy:03": "jest --watch easy/03-valid-parentheses",
+    "watch:easy:04": "jest --watch easy/04-merge-two-sorted-lists",
+    "watch:medium:01": "jest --watch medium/01-longest-substring",
+    "watch:medium:02": "jest --watch medium/02-three-sum",
+    "watch:medium:03": "jest --watch medium/03-container-with-most-water",
+    "watch:hard:01": "jest --watch hard/01-median-two-sorted-arrays",
+    "watch:hard:02": "jest --watch hard/02-trapping-rain-water",
+    "watch:hard:03": "jest --watch hard/03-regular-expression-matching"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
