@@ -21,6 +21,10 @@ describe('Valid Parentheses', () => {
     expect(isValid('{[]}')).toBe(true);
   });
 
+  test('"{[]()}" is valid', () => {
+    expect(isValid('{[]}')).toBe(true);
+  });
+
   test('empty string is valid', () => {
     expect(isValid('')).toBe(true);
   });
