@@ -12,7 +12,12 @@ leetcode/
 │   ├── 01-two-sum/
 │   ├── 02-palindrome-number/
 │   ├── 03-valid-parentheses/
-│   └── 04-merge-two-sorted-lists/
+│   ├── 04-merge-two-sorted-lists/
+│   ├── 05-best-time-to-buy-and-sell-stock/
+│   ├── 06-contains-duplicate/
+│   ├── 07-maximum-subarray/
+│   ├── 08-climbing-stairs/
+│   └── 09-binary-search/
 ├── medium/
 │   ├── 01-longest-substring/
 │   ├── 02-three-sum/
@@ -45,6 +50,11 @@ Each challenge folder contains:
 | 02 | [Palindrome Number](easy/02-palindrome-number/README.md) | [#9](https://leetcode.com/problems/palindrome-number/) |
 | 03 | [Valid Parentheses](easy/03-valid-parentheses/README.md) | [#20](https://leetcode.com/problems/valid-parentheses/) |
 | 04 | [Merge Two Sorted Lists](easy/04-merge-two-sorted-lists/README.md) | [#21](https://leetcode.com/problems/merge-two-sorted-lists/) |
+| 05 | [Best Time to Buy and Sell Stock](easy/05-best-time-to-buy-and-sell-stock/README.md) | [#121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
+| 06 | [Contains Duplicate](easy/06-contains-duplicate/README.md) | [#217](https://leetcode.com/problems/contains-duplicate/) |
+| 07 | [Maximum Subarray](easy/07-maximum-subarray/README.md) | [#53](https://leetcode.com/problems/maximum-subarray/) |
+| 08 | [Climbing Stairs](easy/08-climbing-stairs/README.md) | [#70](https://leetcode.com/problems/climbing-stairs/) |
+| 09 | [Binary Search](easy/09-binary-search/README.md) | [#704](https://leetcode.com/problems/binary-search/) |
 
 ### 🟡 Medium
 
@@ -73,6 +83,11 @@ npm run watch:easy:01      # Two Sum
 npm run watch:easy:02      # Palindrome Number
 npm run watch:easy:03      # Valid Parentheses
 npm run watch:easy:04      # Merge Two Sorted Lists
+npm run watch:easy:05      # Best Time to Buy and Sell Stock
+npm run watch:easy:06      # Contains Duplicate
+npm run watch:easy:07      # Maximum Subarray
+npm run watch:easy:08      # Climbing Stairs
+npm run watch:easy:09      # Binary Search
 
 npm run watch:medium:01    # Longest Substring
 npm run watch:medium:02    # 3Sum
