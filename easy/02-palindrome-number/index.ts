@@ -3,9 +3,13 @@
  * @returns Whether the integer is a palindrome.
  */
 function isPalindrome(x: number): boolean | null {
-  void x;
-  // TODO: implement
-  return null;
+  const seq = String(x).split('')
+  for(let i = 0; i < Math.floor(seq.length/2); i++) {
+    if( seq[i] !== seq[seq.length-i-1] ) {
+      return false
+    }
+  }
+  return true;
 }
 
 export { isPalindrome };
