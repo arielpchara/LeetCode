@@ -120,12 +120,11 @@ Keep these development dependencies installed:
 ## Suggested Next Challenges
 
 ### Easy
-- `05-best-time-to-buy-and-sell-stock` — LeetCode #121
-- `06-contains-duplicate` — LeetCode #217
-- `07-maximum-subarray` — LeetCode #53
-- `08-climbing-stairs` — LeetCode #70
-- `09-binary-search` — LeetCode #704
 - `10-reverse-string` — LeetCode #344
+- `11-valid-anagram` — LeetCode #242
+- `12-first-bad-version` — LeetCode #278
+- `13-symmetric-tree` — LeetCode #101
+- `14-linked-list-cycle` — LeetCode #141
 
 ### Medium
 - `04-product-of-array-except-self` — LeetCode #238

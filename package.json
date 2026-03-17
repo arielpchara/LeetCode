@@ -19,7 +19,12 @@
     "watch:medium:03": "jest --watch medium/03-container-with-most-water",
     "watch:hard:01": "jest --watch hard/01-median-two-sorted-arrays",
     "watch:hard:02": "jest --watch hard/02-trapping-rain-water",
-    "watch:hard:03": "jest --watch hard/03-regular-expression-matching"
+    "watch:hard:03": "jest --watch hard/03-regular-expression-matching",
+    "watch:easy:05": "jest --watch easy/05-best-time-to-buy-and-sell-stock",
+    "watch:easy:06": "jest --watch easy/06-contains-duplicate",
+    "watch:easy:07": "jest --watch easy/07-maximum-subarray",
+    "watch:easy:08": "jest --watch easy/08-climbing-stairs",
+    "watch:easy:09": "jest --watch easy/09-binary-search"
   },
   "keywords": [],
   "author": "",
