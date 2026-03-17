@@ -43,6 +43,6 @@ Output: [0,1]
 
 ## Function Signature
 
-```js
-function twoSum(nums, target) {}
+```ts
+function twoSum(nums: number[], target: number): number[] {}
 ```

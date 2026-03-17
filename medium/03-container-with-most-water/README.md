@@ -38,6 +38,6 @@ Output: 1
 
 ## Function Signature
 
-```js
-function maxArea(height) {}
+```ts
+function maxArea(height: number[]): number {}
 ```

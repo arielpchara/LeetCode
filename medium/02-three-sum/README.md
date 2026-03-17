@@ -38,6 +38,6 @@ Output: [[0,0,0]]
 
 ## Function Signature
 
-```js
-function threeSum(nums) {}
+```ts
+function threeSum(nums: number[]): number[][] {}
 ```

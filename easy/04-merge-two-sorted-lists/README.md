@@ -41,6 +41,6 @@ Output: [0]
 
 ## Function Signature
 
-```js
-function mergeTwoLists(list1, list2) {}
+```ts
+function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {}
 ```

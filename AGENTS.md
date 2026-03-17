@@ -12,45 +12,49 @@ Each challenge lives in its own directory under `easy/`, `medium/`, or `hard/`:
 <difficulty>/
   <nn>-<kebab-case-title>/
     README.md        — challenge description
-    index.js         — stub (DO NOT implement)
-    index.test.js    — unit tests (must fail until solved)
+    index.ts         — stub (DO NOT implement)
+    index.test.ts    — unit tests (must fail until solved)
 ```
 
 Directories are zero-padded and numbered sequentially within their difficulty (e.g., `05-`, `06-`).
 
 ---
 
-## Rules for index.js
+## Rules for index.ts
 
-- Export the primary function(s) using `module.exports`.
+- Export the primary function(s) using named TypeScript exports.
 - The stub must return `null` — **never implement the solution**.
-- Include a JSDoc comment with `@param` and `@return` types.
+- Include a JSDoc comment describing parameters and return value.
 - Include helper classes (e.g., `ListNode`, `TreeNode`) when the problem requires them.
 - Use `// TODO: implement` as the only comment inside the function body.
+- Add explicit TypeScript types for parameters, helpers, and return values.
+- If a stub returns `null`, the return type must allow `null` until the challenge is solved.
 
-```js
+```ts
 /**
- * @param {type} param
- * @return {type}
+ * @param value - Input value.
+ * @returns Expected output for the challenge.
  */
-function solveProblem(param) {
+function solveProblem(value: number): number | null {
+  void value;
   // TODO: implement
   return null;
 }
-module.exports = { solveProblem };
+
+export { solveProblem };
 ```
 
 ---
 
-## Rules for index.test.js
+## Rules for index.test.ts
 
-- Import from `'./index'` using `require`.
+- Import from `'./index'` using TypeScript `import` syntax.
 - Use `describe('<Challenge Name>', () => { ... })` as the top-level block.
 - Write **at least 5 test cases** per challenge.
 - Cover: provided examples, edge cases (empty input, single element, negative numbers, zero).
 - All tests must **run and fail** with the stub — do NOT use `.skip` or `.todo`.
 - Use `expect(...).toBe(...)` for primitives, `expect(...).toEqual(...)` for arrays/objects.
-- For linked list / tree problems, include `arrayToList` / `listToArray` helper functions inside the test file.
+- For linked list / tree problems, include typed `arrayToList` / `listToArray` helper functions inside the test file.
 
 ---
 
@@ -82,6 +86,16 @@ Example for `easy/05-best-time-to-buy-and-sell-stock/`:
 "watch:easy:05": "jest --watch easy/05-best-time-to-buy-and-sell-stock"
 ```
 
+Keep these development dependencies installed:
+
+```json
+"@types/jest"
+"@types/node"
+"jest"
+"ts-jest"
+"typescript"
+```
+
 ---
 
 ## Difficulty Guidelines
@@ -99,6 +113,7 @@ Example for `easy/05-best-time-to-buy-and-sell-stock/`:
 - Directory: `<nn>-<kebab-case-slug>` (e.g., `05-climbing-stairs`)
 - Function: camelCase matching the LeetCode function name (e.g., `climbStairs`)
 - Test describe block: title-cased challenge name (e.g., `'Climbing Stairs'`)
+- Source file names: `index.ts` and `index.test.ts`
 
 ---
 
@@ -132,6 +147,9 @@ Example for `easy/05-best-time-to-buy-and-sell-stock/`:
 ```bash
 # Run all tests
 npm test
+
+# Run type-checking
+npm run typecheck
 
 # Run by difficulty
 npm run test:easy

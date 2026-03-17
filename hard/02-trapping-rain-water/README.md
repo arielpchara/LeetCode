@@ -32,6 +32,6 @@ Output: 9
 
 ## Function Signature
 
-```js
-function trap(height) {}
+```ts
+function trap(height: number[]): number {}
 ```

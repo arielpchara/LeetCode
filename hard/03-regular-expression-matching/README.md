@@ -47,6 +47,6 @@ Explanation: ".*" means "zero or more (*) of any character (.)".
 
 ## Function Signature
 
-```js
-function isMatch(s, p) {}
+```ts
+function isMatch(s: string, p: string): boolean {}
 ```

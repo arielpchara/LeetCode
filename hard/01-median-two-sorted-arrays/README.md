@@ -38,6 +38,6 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 
 ## Function Signature
 
-```js
-function findMedianSortedArrays(nums1, nums2) {}
+```ts
+function findMedianSortedArrays(nums1: number[], nums2: number[]): number {}
 ```

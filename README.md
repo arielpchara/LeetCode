@@ -1,6 +1,6 @@
 # LeetCode Practice
 
-A structured LeetCode practice repo using **Node.js** and **Jest**. Each challenge lives in its own directory with a problem description, a stub to implement, and a full test suite that fails until you solve it.
+A structured LeetCode practice repo using **Node.js**, **TypeScript**, and **Jest**. Each challenge lives in its own directory with a problem description, a stub to implement, and a full test suite that fails until you solve it.
 
 ---
 
@@ -30,8 +30,8 @@ Each challenge folder contains:
 | File | Purpose |
 |---|---|
 | `README.md` | Full problem statement, examples, constraints, complexity hints |
-| `index.js` | **Your solution goes here** — starts as a stub returning `null` |
-| `index.test.js` | Jest tests — all fail until the solution is correct |
+| `index.ts` | **Your solution goes here** — starts as a stub returning `null` |
+| `index.test.ts` | Jest tests — all fail until the solution is correct |
 
 ---
 
@@ -89,7 +89,7 @@ Open `README.md` inside the challenge folder.
 
 ### 3. Implement the solution
 
-Edit `index.js` — replace the stub with your solution. Tests re-run automatically on save.
+Edit `index.ts` — replace the stub with your solution. Tests re-run automatically on save.
 
 ### 4. All tests green? Move to the next one 🎉
 
@@ -104,6 +104,7 @@ npm run test:watch    # watch all tests
 npm run test:easy     # run only easy tests
 npm run test:medium   # run only medium tests
 npm run test:hard     # run only hard tests
+npm run typecheck     # run TypeScript type-checking
 ```
 
 ---

@@ -39,6 +39,6 @@ Explanation: The answer is "wke", with the length of 3.
 
 ## Function Signature
 
-```js
-function lengthOfLongestSubstring(s) {}
+```ts
+function lengthOfLongestSubstring(s: string): number {}
 ```

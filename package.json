@@ -1,7 +1,7 @@
 {
   "name": "leetcode",
   "version": "1.0.0",
-  "description": "",
+  "description": "TypeScript LeetCode practice repository with Jest test suites.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -9,6 +9,7 @@
     "test:easy": "jest easy/",
     "test:medium": "jest medium/",
     "test:hard": "jest hard/",
+    "typecheck": "tsc --noEmit",
     "watch:easy:01": "jest --watch easy/01-two-sum",
     "watch:easy:02": "jest --watch easy/02-palindrome-number",
     "watch:easy:03": "jest --watch easy/03-valid-parentheses",
@@ -23,8 +24,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
-    "jest": "^29.0.0"
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3"
   }
 }

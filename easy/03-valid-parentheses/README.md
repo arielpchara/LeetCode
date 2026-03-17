@@ -42,6 +42,6 @@ Output: false
 
 ## Function Signature
 
-```js
-function isValid(s) {}
+```ts
+function isValid(s: string): boolean {}
 ```

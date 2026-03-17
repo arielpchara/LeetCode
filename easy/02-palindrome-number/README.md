@@ -44,6 +44,6 @@ Could you solve it without converting the integer to a string?
 
 ## Function Signature
 
-```js
-function isPalindrome(x) {}
+```ts
+function isPalindrome(x: number): boolean {}
 ```
